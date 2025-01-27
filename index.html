@@ -1,0 +1,463 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask me identity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- font-family: "Righteous", serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <!-- font-family: "Saira", serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header section -->
+    <header id="header" class="flex px-10 header-container">
+        <div class="w-1/3 flex items-center">
+            <img class="h-full" src="./assets/logo.png" alt="Company Logo" />
+        </div>
+        <div class="w-2/3 flex items-center justify-between">
+            <nav>
+                <ul class="flex gap-x-8">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Courses</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+            <div class="flex">
+                <ul class="flex gap-x-4">
+                    <li>
+                        <img style="width: 30px;" src="./assets/cart.svg" alt="Cart Icon" />
+                    </li>
+                    <li>
+                        <img src="./assets/search.svg" alt="Search Icon" />
+                        
+                    </li>
+                    <li>
+                        <img src="./assets/profile.svg" alt="Profile Icon" />
+                    </li>
+                </ul>
+            </div>
+            <div class="flex">
+                <button class="h-full btn btn-1">Login</button>
+                <button class="h-full btn btn-2 gradient-bg">Signup</button>
+            </div>
+        </div>
+    </header>
+    <!-- Hero section -->
+     <section id="hero" class="flex px-20 hero-section gradient-bg">
+          <div class="w-1/2 h-full flex flex-col content">
+            <p class="mb-5 font-thin">Successful coaches are visionaries</p>
+            <h1 class="mb-10  text-7xl">
+                Good <span>coaching</span> is good teaching & nothing else.
+            </h1>
+            <div class="flex gap-x-8 mb-10">
+                <button class="btn btn-3 px-10 w-auto">View Courses</button>
+                <button class="btn btn-1 w-auto" style="color: #FFFFFF;">Get Free Consultation</button>
+            </div>
+            <div class="search-input flex gap-x-4">
+                <input class="w-2/3" placeholder="What do you want to learn today?" />
+                <button class="w-1/3  btn btn-2 gradient-bg">Search</button>
+            </div>
+        </div>
+        <div style="background-image: url('./assets/women.png');" class="w-1/2 mix-blend-multiply image">
+        </div>
+        <div class="radial-blur blur-2xl"></div>
+     </section>
+    <!-- Podcasts section -->
+      <section id="podcast" class="podcast-container px-20 gradient-bg">
+        <div class="grid grid-cols-4 gap-4 h-full">
+            <div class="w-full brand-image" style="background-image: url('./assets/amazon.svg');">
+            </div>
+            <div class="w-full brand-image" style="background-image: url('./assets/cisco.svg');">
+            </div>
+            <div class="w-full brand-image" style="background-image: url('./assets/logitech.svg');">
+            </div>
+            <div class="w-full brand-image" style="background-image: url('./assets/spotify.svg');">
+            </div>
+        </div>
+      </section>
+    <!-- Featured Courses section -->
+       <section class="px-20 featured-courses" id="featured-courses">
+            <h3 class="text-center text-5xl">Featured <span>Courses</span></h3>
+            <p class="text-center text-md uppercase mb-20">The feature courses are we invented our teaching part</p>
+           <div class="mb-20 products-container">
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="products-card">
+                        <img src="./assets/b1.png" alt="location" />
+                        <div class="content">
+                            <div class="flex justify-between mb-10">
+                                <p>1,957 Students</p>
+                                <p>1h 57mins</p>
+                            </div>
+                            <h2 class="text-2xl mb-10">
+                                Motion Graphics: Create a Nice Typography Animation
+                            </h2>
+                            <div class="flex justify-between items-center">
+                                <p>Rs.499</p>
+                                <button class="flex items-center gap-x-2 btn">
+                                    <img src="./assets/cart.svg" alt="Cart Icon" />
+                                    <span>Add To Cart</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-card">
+                        <img src="./assets/b2.png" alt="advance" />
+                        <div class="content">
+                            <div class="flex justify-between mb-10">
+                                <p>1,957 Students</p>
+                                <p>1h 57mins</p>
+                            </div>
+                            <h2 class="text-2xl mb-10">
+                                Education Software and PHP and JS System Script
+                            </h2>
+                            <div class="flex justify-between items-center">
+                                <p>Rs.499</p>
+                                <button class="flex items-center gap-x-2 btn">
+                                    <img src="./assets/cart.svg" alt="Cart Icon" />
+                                    <span>Add To Cart</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-card">
+                        <img src="./assets/b3.png" alt="education software" />
+                        <div class="content">
+                            <div class="flex justify-between mb-10">
+                                <p>1,957 Students</p>
+                                <p>1h 57mins</p>
+                            </div>
+                            <h2 class="text-2xl mb-10">
+                                Motion Graphics: Create a Nice Typography Animation
+                            </h2>
+                            <div class="flex justify-between items-center">
+                                <p>Rs.499</p>
+                                <button class="flex items-center gap-x-2 btn">
+                                    <img src="./assets/cart.svg" alt="Cart Icon" />
+                                    <span>Add To Cart</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-card">
+                        <img src="./assets/b4.png" alt="complete financial"/>
+
+                        <div class="content">
+                            <div class="flex justify-between mb-10">
+                                <p>1,957 Students</p>
+                                <p>1h 57mins</p>
+                            </div>
+                            <h2 class="text-2xl mb-10">
+                                Education Software and PHP and JS System Script
+                            </h2>
+                            <div class="flex justify-between items-center">
+                                <p>Rs.499</p>
+                                <button class="flex items-center gap-x-2 btn">
+                                    <img src="./assets/cart.svg" alt="Cart Icon" />
+                                    <span>Add To Cart</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-card">
+                        <img src="./assets/b5.png" alt="Marketing" />
+                        <div class="content">
+                            <div class="flex justify-between mb-10">
+                                <p>1,957 Students</p>
+                                <p>1h 57mins</p>
+                            </div>
+                            <h2 class="text-2xl mb-10">
+                                Motion Graphics: Create a Nice Typography Animation
+                            </h2>
+                            <div class="flex justify-between items-center">
+                                <p>Rs.499</p>
+                                <button class="flex items-center gap-x-2 btn">
+                                    <img src="./assets/cart.svg" alt="Cart Icon" />
+                                    <span>Add To Cart</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-card">
+                        <img src="./assets/b6.png" alt="3D Modeling" />
+                        <div class="content">
+                            <div class="flex justify-between mb-10">
+                                <p>1,957 Students</p>
+                                <p>1h 57mins</p>
+                            </div>
+                            <h2 class="text-2xl mb-10">
+                                Education Software and PHP and JS System Script
+                            </h2>
+                            <div class="flex justify-between items-center">
+                                <p>Rs.499</p>
+                                <button class="flex items-center gap-x-2 btn">
+                                    <img src="./assets/cart.svg" alt="Cart Icon" />
+                                    <span>Add To Cart</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+           </div></br></br>
+           <div class="flex justify-center">
+            <button class="btn btn-2 gradient-bg">Explore Courses</button>
+           </div>
+        </section>
+    <!--Learn with our course section-->
+         <section id="course" class="flex gradient-bg">     
+           <div class="mx-auto max-w-7xl px-4 py-14 listing-section items-center ">
+            <h3 class="text-3xl font-bold text-white text-center">Why <span class="text-blue-700">learn</span> with our courses?</h3>
+            <h4 class="text-center text-white text-base font-serif mb-10">We are providing the best courses and top classes. And</br> extradinery placement training.....</h4>
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
+                <div class="flex-shrink-0 m-6 relative overflow-hidden  border-gray-100 border-dashed border-b-2 lg:border-r-2 lg:border-b-0 md:border-r-2 md:border-b-0 sm:border-b-2 sm:border-r-0">
+                    <div class="relative pt-10 px-10 flex items-center justify-center">
+                        <img class="relative w-[70px] h-[70px]" src="assets/learn.svg" alt="learn">
+                    </div>
+                    <div class="relative text-center text-white px-6 pb-6 mt-6">
+                        <span class="block font-semibold text-xl">01. Learn </span>
+                        <br>
+                        <span class="block font-medium -mb-1">Learn continually. There is always “one more thing” to learn.</span>
+                    </div>
+                </div>
+
+                <div class="flex-shrink-0 m-6 relative overflow-hidden">
+                    <div class="relative pt-10 px-10 flex items-center justify-center">
+                        <img class="relative w-[70px] h-[70px]" src="assets/graduate.svg" alt="graduate">
+                    </div>
+                    <div class="relative text-center text-white px-6 pb-6 mt-6">
+                        <span class="block font-semibold text-xl">02. Graduate </span>
+                        <br>
+                        <span class="block font-medium -mb-1">Be bold, be courageous, be your best.</span>
+                    </div>
+                </div>
+
+                <div class="flex-shrink-0 m-6 relative overflow-hidden border-gray-100 border-dashed border-t-2  lg:border-l-2 lg:border-t-0 md:border-l-2 md:border-t-0 sm:border-t-2 sm:border-l-0">
+                    <div class="relative pt-10 px-10 flex items-center justify-center">
+                        <img class="relative w-[70px] h-[70px]" src="assets/work.svg" alt="work">
+                    </div>
+                    <div class="relative text-center text-white px-6 pb-6 mt-6">
+                        <span class="block font-semibold text-xl">03. Work </span>
+                        <br>
+                        <span class="block font-medium -mb-1">Great companies are built in the office,with hard work put in by team.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Top Categories section-->
+        <section class="px-20 Learning" id="Learning">
+        <h3 class="text-center text-5xl">Top <span>Categories</span></h3>
+        <p class="text-center text-md uppercase mt-3 mb-20">100+ unique online course list designs</p>
+       <div class="mb-20 Top-category">
+            <div class="grid grid-cols-6 gap-7">
+                <div class="top-card">
+                    <div class="content">
+                    <img src="./assets/digital marketing.svg" alt="location" />
+                        <h2 class="text-2xl mb-10 mt-10 text-center">
+                            Digital Marketing
+                        </h2>
+                        <div class="flex justify-between items-center">
+                            <p>25 Courses</p>
+                        </div>                
+                    </div>
+                </div>
+                <div class="top-card">
+                    <div class="content">
+                    <img src="./assets/Web development.svg" alt="location" />
+                        <h2 class="text-2xl mb-10 mt-10 text-center">
+                            Web Development
+                        </h2>
+                        <div class="flex justify-between items-center">
+                            <p>16 Courses</p>
+                        </div>                
+                    </div>
+                </div>
+                <div class="top-card">
+                    <div class="content">
+                    <img src="./assets/Art & Humanities.svg" alt="location" />
+                        <h2 class="text-2xl mb-10 mt-10 text-center">
+                            Art & Humanities
+                        </h2>
+                        <div class="flex justify-between items-center">
+                            <p>76 Courses</p>
+                        </div>                
+                    </div>
+                </div>
+                <div class="top-card">
+                    <div class="content">
+                    <img src="./assets/Personal Development.svg" alt="location" />
+                        <h2 class="text-2xl mb-10 mt-10 text-center">
+                            Personal Development
+                        </h2>
+                        <div class="flex justify-between items-center">
+                            <p>22 Courses</p>
+                        </div>                
+                    </div>
+                </div>
+                <div class="top-card">
+                    <div class="content">
+                    <img src="./assets/IT and Software.svg" alt="location" />
+                        <h2 class="text-2xl mb-10 mt-10 text-center">
+                            IT and Software
+                        </h2>
+                        <div class="flex justify-between items-center">
+                            <p>110 Courses</p>
+                        </div>                
+                    </div>
+                </div>
+                <div class="top-card">
+                    <div class="content">
+                    <img src="./assets/GD.svg" alt="location" />
+                        <h2 class="text-2xl mb-10 mt-10 text-center">
+                            Graphics Design
+                        </h2>
+                        <div class="flex justify-between items-center">
+                            <p>85 Courses</p>
+                        </div>                
+                    </div>
+                </div>
+
+            </div>
+       </div>
+        </section></br>
+    <!--Subcribe section-->
+    <section class="bg-[url(/Assets/bk.svg)] bg-center">
+    <div class=" h-60 py-16 px-4 mx-auto max-w-screen-3xl lg:py-16 lg:px-6 bg-[url('./assets/subscribe.png')] bg-cover lg:w-7/12 md:w-10/12 sm:10/12  rounded-lg lg:rounded-[30px]">
+    </section> 
+      
+    <!-- Video Section -->
+    <section class="bg-white py-20 lg:py-[120px] dark:bg-dark" >
+               <div class="container mx-auto">
+            <div class="flex flex-wrap justify-center -mx-4">
+                <div class="w-full px-4 lg:w-8/12">
+                    <div class="relative z-20 h-[300px] overflow-hidden rounded-lg lg:rounded-[50px]  md:h-[450px]" >
+                        <div class="absolute top-0 left-0 w-full h-full">
+                        <img src="assets/Video.png" alt="video" class="object-cover object-center w-full h-full"/>
+                        </div>
+                        <div class="absolute top-0 left-0 z-10 flex items-center justify-center w-full h-full bg-blue bg-opacity-90">
+                        <a href=" " class="absolute z-20 flex h-20 w-20 items-center justify-center rounded-full bg-white dark:bg-dark-2 text-blue dark:text-white md:h-[100px] md:w-[100px]" >
+                            <span class="absolute top-0 right-0 z-[-1] h-full w-full animate-ping rounded-full bg-white bg-opacity-20 delay-300 duration-1000" ></span>
+                            <img src="assets/play.png" alt="play">
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Testimonial section-->
+    <section class="bg-gradient-to-t from-[#DBEDFF] to-transparent">
+        <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+            <h2 class="mb-4 text-3xl text-center tracking-tight font-bold text-blue-700 sm:text-4xl"> Testimonials </h2>
+            <p class="mx-auto mb-8 max-w-2xl text-center font-medium text-gray-400 md:mb-12 sm:text-xl">What our student say about us</p>
+            <div class="grid gap-4 md:grid-cols-3 md:gap-5">
+                <div class="rounded-xl bg-white p-6 text-center shadow-xl">
+                    <div class="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full">
+                        <img src="assets/person.svg" class="size-16 rounded-full object-cover"alt="person"/>                
+                    </div>
+                    <p class="px-4 text-gray-500">Such an amazing traniner and easily understand the entire syllabus, and the guidence will be super and good to the way of explaning.</p>
+                </br><span><img src="assets/star.png" alt="star"></span>
+                </div>
+                <div class="rounded-xl bg-white p-6 text-center shadow-xl transition hover:text-blue-700">
+                    <div class="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full">
+                        <img src="assets/person.svg" class="size-16 rounded-full object-cover"alt="person" />                
+                    </div>
+                    <p class="px-4 text-gray-500">Such an amazing traniner and easily understand the entire syllabus, and the guidence will be super and good to the way of explaning.</p>
+                </br><span><img src="assets/star.png" alt="star"></span>
+                </div>
+                <div class="rounded-xl bg-white p-6 text-center shadow-xl">
+                    <div class="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full">
+                        <img src="assets/person.svg" class="size-16 rounded-full object-cover"alt="person" />                 
+                    </div>
+                    <p class="px-4 text-gray-500">Such an amazing traniner and easily understand the entire syllabus, and the guidence will be super and good to the way of explaning.</p>
+                </br><span><img src="assets/star.png" alt="star"></span>
+                </div>
+            </div>          
+          </div>
+        </div>
+    </section>
+    <!--Footer Section Start -->
+    <footer class="gradient-bg-footer text-black">
+        <div class="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
+          <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+            <div>
+                <p class="font-medium text-black-300">Connect</p>
+              <div class="text-teal-600">
+                <img src="assets/logo1.svg" class="w-[150px] h-auto"alt="logo"/>
+              </div>
+              <p class="mt-4 max-w-xs text-black"> Sri Jagannath Nivas,8-1-164/345/A/1, Pragati Colony, Mailardevpally, Nawab Saheb Kunta, Hyd, 500005</p>
+            </div>
+      
+            <div class="grid grid-cols-2 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
+              <div>
+                <p class="font-medium text-black-300">Classes</p>
+                <ul class="mt-6 space-y-4 text-sm">
+                  <li> <a href="Classroom courses" class="text-black transition hover:opacity-75"> Classroom courses </a> </li>
+                  <li> <a href="Virtual Classroom Courses" class="text-black transition hover:opacity-75"> Virtual Classroom Courses </a> </li>
+                  <li> <a href="E-learning Courses" class="text-black transition hover:opacity-75"> E-learning Courses </a> </li>
+                  <li> <a href="Video Courses" class="text-black transition hover:opacity-75"> Video Courses </a> </li>
+                  <li> <a href="Offline Courses" class="text-black transition hover:opacity-75"> Offline Courses </a> </li>
+                </ul>
+              </div>
+
+              <div>
+                <p class="font-medium text-black-300">Community</p>
+                <ul class="mt-6 space-y-4 text-sm">
+                  <li> <a href="Learners" class="text-black transition hover:opacity-75"> Learners </a> </li>
+                  <li> <a href="Partners" class="text-black transition hover:opacity-75"> Partners </a> </li>
+                  <li> <a href="Developers" class="text-black transition hover:opacity-75"> Developers </a> </li>
+                  <li> <a href="Transactions" class="text-black transition hover:opacity-75"> Transactions </a> </li>
+                  <li> <a href="Blog" class="text-black transition hover:opacity-75"> Blog </a> </li>
+                </ul>
+              </div>
+
+              <div>
+                <p class="font-medium text-black-300">Quick Links</p>
+                <ul class="mt-6 space-y-4 text-sm">
+                  <li> <a href="Home" class="text-black transition hover:opacity-75"> Home </a> </li>
+                  <li> <a href="Professional Education" class="text-black transition hover:opacity-75"> Professional Education </a> </li>
+                  <li> <a href="Courses" class="text-black transition hover:opacity-75"> Courses </a> </li>
+                  <li> <a href="Admissions" class="text-black transition hover:opacity-75"> Admissions </a> </li>
+                  <li> <a href="Testimonials" class="text-black transition hover:opacity-75"> Testimonials </a> </li>
+                  <li> <a href="Programs" class="text-black transition hover:opacity-75"> Programs </a> </li>
+                </ul>
+              </div>
+
+              <div>
+                <p class="font-medium text-black-300">More</p>
+                <ul class="mt-6 space-y-4 text-sm">
+                  <li> <a href="Press" class="text-black transition hover:opacity-75"> Press </a> </li>
+                  <li> <a href="Investors" class="text-black transition hover:opacity-75"> Investors </a> </li>
+                  <li> <a href="Terms" class="text-black transition hover:opacity-75"> Terms </a> </li>
+                  <li> <a href="Privacy" class="text-black transition hover:opacity-75"> Privacy </a> </li>
+                  <li> <a href="Help" class="text-black transition hover:opacity-75"> Help </a> </li>
+                  <li> <a href="Contact Us" class="text-black transition hover:opacity-75"> Contact Us </a> </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        <section id="footer container" class="footer-container gradient-bg">
+           <ul class="p-3 h-60px flex justify-center gap-6 md:gap-8">
+            <li> <a href="instagram" class="text-blue-300 font-medium lg:text-3xl transition hover:text-black" > <img src="assets/Instagram.svg" class="w-[30px] h-[30px]"alt="Instagram"></i> </a> </li>
+            <li> <a href="whatsapp" class="text-blue-300 font-medium lg:text-3xl transition hover:text-black" > <img src="assets/WhatsApp.svg" class="w-[30px] h-[30px]"alt="logo"></i> </a> </li>
+            <li> <a href="twitter" class="text-blue-300 font-medium lg:text-3xl transition hover:text-black" > <img src="assets/Twitter.svg" class="w-[30px] h-[30px]"alt="logo"></i> </a> </li>
+            <li> <a href="LinkedIn" class="text-blue-300 font-medium lg:text-3xl transition hover:text-black" > <img src="assets/LinkedIn.svg" class="w-[30px] h-[30px]"alt="logo"></i> </a> </li>
+            <li> <a href="youtube" class="text-blue-300 font-medium lg:text-3xl transition hover:text-black" > <img src="assets/YouTube.svg" class="w-w-[30px] h-[30px]"alt="logo"></i> </a> </li>
+          </ul>
+          <p class="text-xs text-center text-white text-gray-500"> Copyright &copy; 2023 askmeidentity. All Rights Reserved</p>
+        </div>
+        </section>
+        </footer> 
+   </body>
+
+</html>
