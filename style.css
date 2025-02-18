@@ -30,6 +30,33 @@ input {
     color: var(--TEXT-INPUT-COLOR);
 }
 
+.section {
+    width: 100%;
+}
+
+.container {
+    width: 2705px !important;
+    height: 100vh;
+    /* Full viewport height for scrollable content */
+    overflow-y: auto;
+}
+
+@media (min-width: 1536px) {
+    .container {
+        max-width: 2705px !important;
+    }
+}
+
+@media (max-width: 1300px) {
+    .navi_link>ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    img[alt="cart"] {
+        rotate: 90deg;
+    }
+}
+
 /* Utilities */
 .btn {
     padding: 10px;
@@ -68,14 +95,24 @@ input {
     }
     
 .radial-blur {
-    width: 400px;
-    height: 400px;
+    width: 800px;
+    height: 550px;
     border-radius: 100%;
     background-color: var(--LIGHT);
-    position: absolute;
+    position: sticky;
     top: 250px;
     right: 200px;
     z-index: 0;
+}
+
+.image_section {
+    width: 750px;  
+    height: 750px;
+    border-radius: 25px;
+    background-image: url('./assets/Ellipse.png');
+    justify-content:center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .search-input {
@@ -93,7 +130,6 @@ input {
     height: var(--HEADER-HEIGHT);
     background: var(--LIGHT);
 }
-
 /* Hero section */
 .hero-section {
     height: calc(100vh - var(--HEADER-HEIGHT));
@@ -112,6 +148,8 @@ input {
     }
     .image {
         position: relative;
+        width: 100%;
+        background-image: url('./assets/women.png');
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -142,6 +180,7 @@ input {
         }
     }
 }
+
 
 /* products container */
 .products-container {
@@ -218,9 +257,31 @@ input {
 ::-webkit-scrollbar-thumb:hover {
     background: #000;
 }
-.footer-container {
-    margin: 0;
-    width: 1300px;
-    height: 100px;
 
-   }
+.footer-container {
+    margin-top: 0%;
+    background: linear-gradient(210deg, rgba(71, 122, 227, 1) 0%, rgba(147, 27, 189, 0.85) 100%);
+    .white_Cricle {
+        width: 45px;
+        height: 45px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 50%;
+        align-content: center;
+        justify-items: center;
+    }
+}
+
+.testcenter {
+    width: 550px;
+    height: 200px;
+    box-shadow: 0 3.5px 4px #00000025;
+    position: relative;
+    top: -10%;
+    left: -13%;
+    background-color: white;
+}
+img[alt="person"] {
+    justify-self: center;
+    position: relative;
+    top: -25%;
+}
